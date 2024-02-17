@@ -57,7 +57,7 @@ const Form = () => {
         type="email"
         value={email}
         onChange={handleEmailChange}
-        style={{ borderColor: emailError ? 'red' : 'green' }}
+        style={{ borderColor: emailError ? 'red' : 'black' }}
       />
       {emailError && <div className="error">{emailError}</div>}
       </div>
@@ -67,6 +67,8 @@ const Form = () => {
         type="password"
         value={password}
         onChange={handlePasswordChange}
+        style={{ borderColor: passwordError ? 'red' : 'black' }}
+
       />
       {passwordError && <div className="error">{passwordError}</div>}
       </div>
@@ -76,6 +78,8 @@ const Form = () => {
         type="password"
         value={confirmPassword}
         onChange={handleConfirmPasswordChange}
+        style={{ borderColor: confirmPasswordError ? 'red' : 'black' }}
+
       />
       {confirmPasswordError && <div className="error">{confirmPasswordError}</div>}
       
