@@ -80,7 +80,7 @@ const Form = () => {
       {confirmPasswordError && <div className="error">{confirmPasswordError}</div>}
       
       </div>
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>Sign up</button>
 
     </div>
   );
