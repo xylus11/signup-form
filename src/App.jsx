@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../src/App.css'
+import videoplayback from '..\src\assets\videoplayback.mp4'
 
 const Form = () => {
   const [email, setEmail] = useState('');
@@ -51,6 +52,7 @@ const Form = () => {
 
   return (
     <div className="form-container">
+      <video src='videoplayback' autoplay loop muted />
       <div className='container'>
       <label>Email:</label>
       <input
